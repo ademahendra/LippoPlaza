@@ -1,0 +1,711 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3001C0101AA6D8B200BF348A /* Storedirectory_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001C00F1AA6D8B200BF348A /* Storedirectory_TableViewController.swift */; };
+		3001C0181AA6D99B00BF348A /* Storecell_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3001C0171AA6D99B00BF348A /* Storecell_TableViewCell.swift */; };
+		301C92EA1AA720D000CDC337 /* Selectmall_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301C92E91AA720D000CDC337 /* Selectmall_ViewController.swift */; };
+		301C92EC1AA721AF00CDC337 /* Pageitem_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 301C92EB1AA721AF00CDC337 /* Pageitem_ViewController.swift */; };
+		30248EE71AA823AA00988584 /* Citydata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30248EE61AA823AA00988584 /* Citydata.swift */; };
+		30248EF11AA82BAD00988584 /* Selectmallcell_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30248EF01AA82BAD00988584 /* Selectmallcell_TableViewCell.swift */; };
+		30458B391AA455090058419C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B381AA455090058419C /* AppDelegate.swift */; };
+		30458B3C1AA455090058419C /* Lippo_Malls.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 30458B3A1AA455090058419C /* Lippo_Malls.xcdatamodeld */; };
+		30458B3E1AA455090058419C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B3D1AA455090058419C /* ViewController.swift */; };
+		30458B411AA455090058419C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30458B3F1AA455090058419C /* Main.storyboard */; };
+		30458B431AA455090058419C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30458B421AA455090058419C /* Images.xcassets */; };
+		30458B461AA455090058419C /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 30458B441AA455090058419C /* LaunchScreen.xib */; };
+		30458B521AA455090058419C /* Lippo_MallsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B511AA455090058419C /* Lippo_MallsTests.swift */; };
+		30458B5C1AA458260058419C /* Malllist_tablelist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B5B1AA458260058419C /* Malllist_tablelist.swift */; };
+		30458B5E1AA458860058419C /* Mall_TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B5D1AA458860058419C /* Mall_TableViewController.swift */; };
+		30458B601AA458B90058419C /* MallCell_TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30458B5F1AA458B90058419C /* MallCell_TableViewCell.swift */; };
+		309B82A91AA5A1DE002BFAF6 /* Alamofire.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 309B829F1AA59A36002BFAF6 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		309B82AB1AA5A212002BFAF6 /* Alamofire.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B82AA1AA5A212002BFAF6 /* Alamofire.swift */; };
+		309B82AD1AA5B469002BFAF6 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 309B82AC1AA5B469002BFAF6 /* SwiftyJSON.swift */; };
+		30D682E61AA45E98008D431C /* Malldetail_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D682E51AA45E98008D431C /* Malldetail_ViewController.swift */; };
+		30D682E81AA466DA008D431C /* Malldata.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D682E71AA466DA008D431C /* Malldata.swift */; };
+		30D682FD1AA470DF008D431C /* SQLite.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 30D682F41AA47094008D431C /* SQLite.framework */; };
+		30D682FF1AA47297008D431C /* SQLite.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = 30D682F41AA47094008D431C /* SQLite.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		30D683011AA4744D008D431C /* lippo.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 30D683001AA4744D008D431C /* lippo.sqlite */; };
+		30D683051AA483A2008D431C /* Home_ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30D683041AA483A2008D431C /* Home_ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30458B4C1AA455090058419C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30458B2B1AA455090058419C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30458B321AA455090058419C;
+			remoteInfo = "Lippo Malls";
+		};
+		309B829E1AA59A36002BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		309B82A01AA59A36002BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire OSX";
+		};
+		309B82A21AA59A36002BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		309B82A41AA59A36002BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire OSX Tests";
+		};
+		309B82A61AA5A190002BFAF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		30D682F31AA47094008D431C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773F319C8CBB3004FCF85;
+			remoteInfo = SQLite;
+		};
+		30D682F51AA47094008D431C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DC3773FE19C8CBB3004FCF85;
+			remoteInfo = "SQLite Tests";
+		};
+		30D682F71AA47094008D431C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCC6B3801A9191C300734B78;
+			remoteInfo = SQLiteCipher;
+		};
+		30D682F91AA47094008D431C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = DCC6B3921A9191D100734B78;
+			remoteInfo = "SQLiteCipher Tests";
+		};
+		30D682FB1AA470C2008D431C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = DC3773F219C8CBB3004FCF85;
+			remoteInfo = SQLite;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		309B82A81AA5A1C0002BFAF6 /* Copy Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				309B82A91AA5A1DE002BFAF6 /* Alamofire.framework in Copy Frameworks */,
+			);
+			name = "Copy Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30D682FE1AA47282008D431C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				30D682FF1AA47297008D431C /* SQLite.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3001C00F1AA6D8B200BF348A /* Storedirectory_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storedirectory_TableViewController.swift; sourceTree = "<group>"; };
+		3001C0171AA6D99B00BF348A /* Storecell_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Storecell_TableViewCell.swift; sourceTree = "<group>"; };
+		301C92E91AA720D000CDC337 /* Selectmall_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selectmall_ViewController.swift; sourceTree = "<group>"; };
+		301C92EB1AA721AF00CDC337 /* Pageitem_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Pageitem_ViewController.swift; sourceTree = "<group>"; };
+		30248EE61AA823AA00988584 /* Citydata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Citydata.swift; sourceTree = "<group>"; };
+		30248EF01AA82BAD00988584 /* Selectmallcell_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Selectmallcell_TableViewCell.swift; sourceTree = "<group>"; };
+		30458B331AA455090058419C /* Lippo Malls.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lippo Malls.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30458B371AA455090058419C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30458B381AA455090058419C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30458B3B1AA455090058419C /* Lippo_Malls.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Lippo_Malls.xcdatamodel; sourceTree = "<group>"; };
+		30458B3D1AA455090058419C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		30458B401AA455090058419C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30458B421AA455090058419C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		30458B451AA455090058419C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		30458B4B1AA455090058419C /* Lippo MallsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Lippo MallsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30458B501AA455090058419C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30458B511AA455090058419C /* Lippo_MallsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lippo_MallsTests.swift; sourceTree = "<group>"; };
+		30458B5B1AA458260058419C /* Malllist_tablelist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malllist_tablelist.swift; sourceTree = "<group>"; };
+		30458B5D1AA458860058419C /* Mall_TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mall_TableViewController.swift; sourceTree = "<group>"; };
+		30458B5F1AA458B90058419C /* MallCell_TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MallCell_TableViewCell.swift; sourceTree = "<group>"; };
+		309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "/Users/ademahendra/Documents/Gees Solusindo/iOS XCode/LippoMalls/../../../../Downloads/Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<absolute>"; };
+		309B82AA1AA5A212002BFAF6 /* Alamofire.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alamofire.swift; sourceTree = "<group>"; };
+		309B82AC1AA5B469002BFAF6 /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		30D682E51AA45E98008D431C /* Malldetail_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malldetail_ViewController.swift; sourceTree = "<group>"; };
+		30D682E71AA466DA008D431C /* Malldata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Malldata.swift; sourceTree = "<group>"; };
+		30D682EB1AA47094008D431C /* SQLite.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = SQLite.xcodeproj; path = "../../../../../Downloads/SQLite.swift-master/SQLite.xcodeproj"; sourceTree = "<group>"; };
+		30D683001AA4744D008D431C /* lippo.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = lippo.sqlite; sourceTree = "<group>"; };
+		30D683041AA483A2008D431C /* Home_ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Home_ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30458B301AA455090058419C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D682FD1AA470DF008D431C /* SQLite.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30458B481AA455090058419C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30458B2A1AA455090058419C = {
+			isa = PBXGroup;
+			children = (
+				30458B351AA455090058419C /* Lippo Malls */,
+				30458B4E1AA455090058419C /* Lippo MallsTests */,
+				30458B341AA455090058419C /* Products */,
+				309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */,
+				30D682EB1AA47094008D431C /* SQLite.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		30458B341AA455090058419C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30458B331AA455090058419C /* Lippo Malls.app */,
+				30458B4B1AA455090058419C /* Lippo MallsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30458B351AA455090058419C /* Lippo Malls */ = {
+			isa = PBXGroup;
+			children = (
+				309B82AC1AA5B469002BFAF6 /* SwiftyJSON.swift */,
+				309B82AA1AA5A212002BFAF6 /* Alamofire.swift */,
+				30458B381AA455090058419C /* AppDelegate.swift */,
+				30458B3D1AA455090058419C /* ViewController.swift */,
+				30458B3F1AA455090058419C /* Main.storyboard */,
+				30458B421AA455090058419C /* Images.xcassets */,
+				30458B441AA455090058419C /* LaunchScreen.xib */,
+				30458B3A1AA455090058419C /* Lippo_Malls.xcdatamodeld */,
+				30458B361AA455090058419C /* Supporting Files */,
+				30458B5B1AA458260058419C /* Malllist_tablelist.swift */,
+				30458B5D1AA458860058419C /* Mall_TableViewController.swift */,
+				30D683001AA4744D008D431C /* lippo.sqlite */,
+				30458B5F1AA458B90058419C /* MallCell_TableViewCell.swift */,
+				30D682E51AA45E98008D431C /* Malldetail_ViewController.swift */,
+				30D682E71AA466DA008D431C /* Malldata.swift */,
+				30248EE61AA823AA00988584 /* Citydata.swift */,
+				30D683041AA483A2008D431C /* Home_ViewController.swift */,
+				3001C00F1AA6D8B200BF348A /* Storedirectory_TableViewController.swift */,
+				3001C0171AA6D99B00BF348A /* Storecell_TableViewCell.swift */,
+				301C92E91AA720D000CDC337 /* Selectmall_ViewController.swift */,
+				301C92EB1AA721AF00CDC337 /* Pageitem_ViewController.swift */,
+				30248EF01AA82BAD00988584 /* Selectmallcell_TableViewCell.swift */,
+			);
+			path = "Lippo Malls";
+			sourceTree = "<group>";
+		};
+		30458B361AA455090058419C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30458B371AA455090058419C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		30458B4E1AA455090058419C /* Lippo MallsTests */ = {
+			isa = PBXGroup;
+			children = (
+				30458B511AA455090058419C /* Lippo_MallsTests.swift */,
+				30458B4F1AA455090058419C /* Supporting Files */,
+			);
+			path = "Lippo MallsTests";
+			sourceTree = "<group>";
+		};
+		30458B4F1AA455090058419C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				30458B501AA455090058419C /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		309B82981AA59A36002BFAF6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				309B829F1AA59A36002BFAF6 /* Alamofire.framework */,
+				309B82A11AA59A36002BFAF6 /* Alamofire.framework */,
+				309B82A31AA59A36002BFAF6 /* Alamofire iOS Tests.xctest */,
+				309B82A51AA59A36002BFAF6 /* Alamofire OSX Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30D682EC1AA47094008D431C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30D682F41AA47094008D431C /* SQLite.framework */,
+				30D682F61AA47094008D431C /* SQLite Tests.xctest */,
+				30D682F81AA47094008D431C /* SQLite.framework */,
+				30D682FA1AA47094008D431C /* SQLiteCipher Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30458B321AA455090058419C /* Lippo Malls */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30458B551AA455090058419C /* Build configuration list for PBXNativeTarget "Lippo Malls" */;
+			buildPhases = (
+				30458B2F1AA455090058419C /* Sources */,
+				30458B301AA455090058419C /* Frameworks */,
+				30458B311AA455090058419C /* Resources */,
+				30D682FE1AA47282008D431C /* CopyFiles */,
+				309B82A81AA5A1C0002BFAF6 /* Copy Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				309B82A71AA5A190002BFAF6 /* PBXTargetDependency */,
+				30D682FC1AA470C2008D431C /* PBXTargetDependency */,
+			);
+			name = "Lippo Malls";
+			productName = "Lippo Malls";
+			productReference = 30458B331AA455090058419C /* Lippo Malls.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30458B4A1AA455090058419C /* Lippo MallsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30458B581AA455090058419C /* Build configuration list for PBXNativeTarget "Lippo MallsTests" */;
+			buildPhases = (
+				30458B471AA455090058419C /* Sources */,
+				30458B481AA455090058419C /* Frameworks */,
+				30458B491AA455090058419C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30458B4D1AA455090058419C /* PBXTargetDependency */,
+			);
+			name = "Lippo MallsTests";
+			productName = "Lippo MallsTests";
+			productReference = 30458B4B1AA455090058419C /* Lippo MallsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30458B2B1AA455090058419C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0720;
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Ade Mahendra";
+				TargetAttributes = {
+					30458B321AA455090058419C = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					30458B4A1AA455090058419C = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 30458B321AA455090058419C;
+					};
+				};
+			};
+			buildConfigurationList = 30458B2E1AA455090058419C /* Build configuration list for PBXProject "Lippo Malls" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30458B2A1AA455090058419C;
+			productRefGroup = 30458B341AA455090058419C /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 309B82981AA59A36002BFAF6 /* Products */;
+					ProjectRef = 309B82971AA59A36002BFAF6 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 30D682EC1AA47094008D431C /* Products */;
+					ProjectRef = 30D682EB1AA47094008D431C /* SQLite.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				30458B321AA455090058419C /* Lippo Malls */,
+				30458B4A1AA455090058419C /* Lippo MallsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		309B829F1AA59A36002BFAF6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 309B829E1AA59A36002BFAF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		309B82A11AA59A36002BFAF6 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 309B82A01AA59A36002BFAF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		309B82A31AA59A36002BFAF6 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 309B82A21AA59A36002BFAF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		309B82A51AA59A36002BFAF6 /* Alamofire OSX Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire OSX Tests.xctest";
+			remoteRef = 309B82A41AA59A36002BFAF6 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30D682F41AA47094008D431C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 30D682F31AA47094008D431C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30D682F61AA47094008D431C /* SQLite Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLite Tests.xctest";
+			remoteRef = 30D682F51AA47094008D431C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30D682F81AA47094008D431C /* SQLite.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = SQLite.framework;
+			remoteRef = 30D682F71AA47094008D431C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		30D682FA1AA47094008D431C /* SQLiteCipher Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "SQLiteCipher Tests.xctest";
+			remoteRef = 30D682F91AA47094008D431C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30458B311AA455090058419C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30D683011AA4744D008D431C /* lippo.sqlite in Resources */,
+				30458B411AA455090058419C /* Main.storyboard in Resources */,
+				30458B461AA455090058419C /* LaunchScreen.xib in Resources */,
+				30458B431AA455090058419C /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30458B491AA455090058419C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30458B2F1AA455090058419C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30248EF11AA82BAD00988584 /* Selectmallcell_TableViewCell.swift in Sources */,
+				30458B5E1AA458860058419C /* Mall_TableViewController.swift in Sources */,
+				30458B601AA458B90058419C /* MallCell_TableViewCell.swift in Sources */,
+				30458B5C1AA458260058419C /* Malllist_tablelist.swift in Sources */,
+				309B82AD1AA5B469002BFAF6 /* SwiftyJSON.swift in Sources */,
+				30D682E81AA466DA008D431C /* Malldata.swift in Sources */,
+				30D683051AA483A2008D431C /* Home_ViewController.swift in Sources */,
+				301C92EA1AA720D000CDC337 /* Selectmall_ViewController.swift in Sources */,
+				30D682E61AA45E98008D431C /* Malldetail_ViewController.swift in Sources */,
+				3001C0181AA6D99B00BF348A /* Storecell_TableViewCell.swift in Sources */,
+				309B82AB1AA5A212002BFAF6 /* Alamofire.swift in Sources */,
+				30458B3E1AA455090058419C /* ViewController.swift in Sources */,
+				30458B3C1AA455090058419C /* Lippo_Malls.xcdatamodeld in Sources */,
+				30248EE71AA823AA00988584 /* Citydata.swift in Sources */,
+				301C92EC1AA721AF00CDC337 /* Pageitem_ViewController.swift in Sources */,
+				30458B391AA455090058419C /* AppDelegate.swift in Sources */,
+				3001C0101AA6D8B200BF348A /* Storedirectory_TableViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30458B471AA455090058419C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30458B521AA455090058419C /* Lippo_MallsTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30458B4D1AA455090058419C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30458B321AA455090058419C /* Lippo Malls */;
+			targetProxy = 30458B4C1AA455090058419C /* PBXContainerItemProxy */;
+		};
+		309B82A71AA5A190002BFAF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 309B82A61AA5A190002BFAF6 /* PBXContainerItemProxy */;
+		};
+		30D682FC1AA470C2008D431C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SQLite;
+			targetProxy = 30D682FB1AA470C2008D431C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30458B3F1AA455090058419C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30458B401AA455090058419C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30458B441AA455090058419C /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30458B451AA455090058419C /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30458B531AA455090058419C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30458B541AA455090058419C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30458B561AA455090058419C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lippo Malls/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		30458B571AA455090058419C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "Lippo Malls/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		30458B591AA455090058419C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lippo MallsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lippo Malls.app/Lippo Malls";
+			};
+			name = Debug;
+		};
+		30458B5A1AA455090058419C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Lippo MallsTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Lippo Malls.app/Lippo Malls";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30458B2E1AA455090058419C /* Build configuration list for PBXProject "Lippo Malls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30458B531AA455090058419C /* Debug */,
+				30458B541AA455090058419C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30458B551AA455090058419C /* Build configuration list for PBXNativeTarget "Lippo Malls" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30458B561AA455090058419C /* Debug */,
+				30458B571AA455090058419C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30458B581AA455090058419C /* Build configuration list for PBXNativeTarget "Lippo MallsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30458B591AA455090058419C /* Debug */,
+				30458B5A1AA455090058419C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		30458B3A1AA455090058419C /* Lippo_Malls.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				30458B3B1AA455090058419C /* Lippo_Malls.xcdatamodel */,
+			);
+			currentVersion = 30458B3B1AA455090058419C /* Lippo_Malls.xcdatamodel */;
+			path = Lippo_Malls.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 30458B2B1AA455090058419C /* Project object */;
+}
